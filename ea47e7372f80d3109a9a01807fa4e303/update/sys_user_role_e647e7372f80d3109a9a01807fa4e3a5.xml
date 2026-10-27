@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Manager</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>SF9QMJBS0Rti99NjoG6EwLSS/y8T1n7Tl2XsQ+6yPc4=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1929781_enterp_0.manager</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>manager</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-27 17:51:11</sys_created_on>
+        <sys_id>e647e7372f80d3109a9a01807fa4e3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1929781_enterp_0.manager</sys_name>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>sys_user_role_e647e7372f80d3109a9a01807fa4e3a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-27 17:51:11</sys_updated_on>
+    </sys_user_role>
+</record_update>
