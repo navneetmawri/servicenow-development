@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>reason</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 12:03:31</sys_created_on>
+        <sys_data_policy display_value="Reason is mandatory for personal leave">87b0a78c2f5057109a9a01807fa4e35f</sys_data_policy>
+        <sys_id>b721e7cc2f5057109a9a01807fa4e3ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reason</sys_name>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>sys_data_policy_rule_b721e7cc2f5057109a9a01807fa4e3ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 12:03:31</sys_updated_on>
+        <table>x_1929781_enterp_0_leave_management_system</table>
+    </sys_data_policy_rule>
+</record_update>

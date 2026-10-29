@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_1929781_enterp_0/fetchleaves</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>79bec7482fdc17109a9a01807fa4e3b4</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>FetchLeaves</name>
+        <namespace>x_1929781_enterp_0</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>fetchleaves</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 10:45:33</sys_created_on>
+        <sys_id>ad9d0f842fdc17109a9a01807fa4e3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FetchLeaves</sys_name>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>sys_ws_definition_ad9d0f842fdc17109a9a01807fa4e3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 10:45:33</sys_updated_on>
+    </sys_ws_definition>
+</record_update>

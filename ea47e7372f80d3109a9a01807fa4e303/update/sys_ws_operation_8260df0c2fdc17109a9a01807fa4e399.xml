@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>fetchMyLeaves</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var result = [];
+    var userId = gs.getUserID();
+	var gr = new GlideRecord('x_1929781_enterp_0_leave_management_system');
+	gr.addQuery('employee', userId);
+	gr.query();
+	while(gr.next()) {
+		result.push({
+			employee: gr.getValue('employee'),
+			leave_type: gr.getValue('leave_type'),
+			status: gr.getValue('status'),
+			start_date: gr.getValue('start_date'),
+			end_date: gr.getValue('end_date')
+		});
+	}
+	response.setBody(result);
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1929781_enterp_0/fetchleaves/fetchMyLeaves</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/fetchMyLeaves</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 10:55:53</sys_created_on>
+        <sys_id>8260df0c2fdc17109a9a01807fa4e399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fetchMyLeaves</sys_name>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>sys_ws_operation_8260df0c2fdc17109a9a01807fa4e399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 10:55:53</sys_updated_on>
+        <web_service_definition display_value="FetchLeaves">ad9d0f842fdc17109a9a01807fa4e3cf</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

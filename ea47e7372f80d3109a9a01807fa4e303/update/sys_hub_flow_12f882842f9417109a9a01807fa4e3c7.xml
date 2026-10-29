@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=1973000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>leave_approval_process</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Management System Record","reference":"x_1929781_enterp_0_leave_management_system","reference_display":"Leave Management System","type":"reference","base_type":"reference","usedInstances":{"e6f12ec9-a70a-4020-9ccb-26b16725f1db":["record"],"803fa8c7-2fc4-46b1-8174-1d86fd042d24":["record"],"676460da-c353-445c-b813-8d18d534f0e0":["record"]},"attributes":{}},{"name":"Created_1.current.employee.manager","label":"Trigger - Record Created➛Leave Management System Record➛Employee➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"e6f12ec9-a70a-4020-9ccb-26b16725f1db":["approval_conditions"]}},{"name":"e6f12ec9-a70a-4020-9ccb-26b16725f1db.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"e77faa31-06aa-4355-8e21-5ff168cd189b":["condition"],"2e504e83-ccaf-4a50-abec-8335161904d5":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>90801e842fd417109a9a01807fa4e3cd</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Leave Approval Process</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>78805e842fd417109a9a01807fa4e3b7</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:37:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12f882842f9417109a9a01807fa4e3c7</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Leave Approval Process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>sys_hub_flow_12f882842f9417109a9a01807fa4e3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:31</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>45809e842fd417109a9a01807fa4e334</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1929781_enterp_0_leave_management_system">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>78805e842fd417109a9a01807fa4e3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:31</sys_updated_on>
+        <table>x_1929781_enterp_0_leave_management_system</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>12f882842f9417109a9a01807fa4e3c7</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:31</sys_created_on>
+        <sys_id>34805e842fd417109a9a01807fa4e3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:31</sys_updated_on>
+        <trigger display_value="">78805e842fd417109a9a01807fa4e3b7</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=12f882842f9417109a9a01807fa4e3c7^sys_idNOT IN34805e842fd417109a9a01807fa4e3b9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=12f882842f9417109a9a01807fa4e3c7^sys_idNOT INd6f882842f9417109a9a01807fa4e3cb"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>12f882842f9417109a9a01807fa4e3c7</id>
+        <name>Leave Approval Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:37:36</sys_created_on>
+        <sys_id>d6f882842f9417109a9a01807fa4e3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 05:37:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d6f882842f9417109a9a01807fa4e3cb"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=12f882842f9417109a9a01807fa4e3c7^sys_idNOT IN13eb4e0c2f9417109a9a01807fa4e33d,5beb4e0c2f9417109a9a01807fa4e300"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</model>
+        <model_id>12f882842f9417109a9a01807fa4e3c7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_12f882842f9417109a9a01807fa4e3c7</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:50:30</sys_created_on>
+        <sys_id>13eb4e0c2f9417109a9a01807fa4e33d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=13eb4e0c2f9417109a9a01807fa4e33d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</model>
+        <model_id>12f882842f9417109a9a01807fa4e3c7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_12f882842f9417109a9a01807fa4e3c7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:50:29</sys_created_on>
+        <sys_id>5beb4e0c2f9417109a9a01807fa4e300</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5beb4e0c2f9417109a9a01807fa4e300"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=12f882842f9417109a9a01807fa4e3c7^sys_idNOT INc7eb8a0c2f9417109a9a01807fa4e349"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:50:28</sys_created_on>
+        <sys_id>c7eb8a0c2f9417109a9a01807fa4e349</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:29</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixlbetk0UDZBPU9rYPQSpQ0tAWSlOuRClxF/n3DnWxZUl2fJFT5ykwSXHOHJ45Q+bph8qIA0y9VifEYaB2VJ8LCDlhk+UCcFjIYZuTuZybE+4REYRL9VqEMXRUGgbzCcwXjAhcTAmLcDAIPQjVa72jJoTFMF5Gdx7uhN+n2+R7qvk0/n61dcuw+gPdBhl8YWs2A5KAjfHIFOY4akfLSMAcP/L8CMMt/8i/vZcLlW+rhcq4WOjOfOaFwNXrp+eOuiAhBhcS2I/KlMBM7Q0alIcsX1/idqlLLAM019RNw9A0Y9DVnSvT0Q3PJKBpuK7KYSVP0UDlmiR4FcA98Fb81VgOgXiPnC1XK2Z4SBmjc/Ia+f/i7gNNrqOAWbmQza1+2jln2bA7C3wXHhfCD3g2kuHMJgMWz/lDhl+yDZTETBRs40gc4X6wkJAliBwRHc+Cl1ER8KvP0+zySRa4hK1+ESFC34kFRPIoqM/wUOyMmyiIwxT96Hb4OLqx//wyGf52O7JHt+PJ6G44ub1R39K87H9iuWOGMMdiZ+m8rSTy1QcmD5DHcwfRdNTIDf2F+OIKPynU+tZZV8Aw4J6fslKrAreYijaroMh+Vxlo2tZCcEsRi2L46/b3usqzweMUPSxjTxV9dUWIB2SLoh1aUnSZkwbQooGect67tJ2P7CPurqb9T/LObe5Ydb8QLiJbBDbxPLvEEpoBbixTDDxgN+t4OO5Pp1gQPl/EInpX7llub+9qO4w5fmCvzqOu8JS2FX/3foRonrA+C25ywPQ+33EUcyXgihuHobRdPFel2F1JUUkt0Ls5+nKGnI6BgStKYqDfo/Kvb34U+XxaQr8Kno7Uo7NlGUJht6cEfW6zvOukJ5V8KmV+fI0Xp5fWt65T6gA1tL6sbl0zHaprfa1HqGdqmmuU6rsOcSt2URHKWer8sCqPUomyPTRRJT4Hr5VrZC9FJ5vlUJAghZObybAdaHpL0AwJrWKK5kGuuBJrNnyzqdldqbV8VyBeQvALr8hxn7vAHr5IWfCCfnuEJ9IghGkYxNyrepPcU/Hx78aKltzQIe7fu8OuVyg/5cf286U545r2QriEL8/miSbVHQu6oKEVmuiCTs+yHJcYlPav+mDoFU9cg2tE/Cm88B0xJE1q2uaLjXpOmsrgAEc8AWDNHQ8GeLov5nJtdMVs7nP438sMuI1QQ5tJh6vZ4JT5HhRz7XpALXSyrvq2fOA+T0pGpwPL7en9vtvHVw+6AO2CQ/Su0SNW/8oc9CouUIO3C7poYOtD3kLRMkqBbHGI79nUZT37zynlCISQjevwfp6uJ1mAUmeVR6KkJhOEiqRTuVsvVMaAfTJ9DbfW3wMxq3V2DP0rjm+ElvfAh4D/0gCnzdcXx4fAPtRsgXJpF4+KSJJN1s/0JIPuoGdRs9l4qNVkPGuI28Ff/EVkT4EkW6XWdCPZtyCTxrreeoU4osQq4infLXZcftoiRW+dFON8pJgnX7iKCt36Dj0G7CdqbOlt4/juFnCwA9ro3j5V8n88gqc4S0XMAMlkeKfGUIqM22Y/yS7HtfaGw0p+j2mvc0maq2nfBApOKOGHJH6e9lWRwke8oMHrk17P3HJ3tqov6CaY72Rx8c3sYOEkTTrc2dEO27e6Z2NPK9XVpk727FatZt3csk7LurFpvZf16e1o1/u/AcWFNprn/wDpdG7HBCAAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=12f882842f9417109a9a01807fa4e3c7^sys_idNOT IN52105e442fd417109a9a01807fa4e3e2,8c2c4e0c2f9417109a9a01807fa4e351,a91f0ec02fd417109a9a01807fa4e3f3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>2e504e83-ccaf-4a50-abec-8335161904d5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:08:43</sys_created_on>
+        <sys_id>52105e442fd417109a9a01807fa4e3e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 07:44:08</sys_updated_on>
+        <ui_id>676460da-c353-445c-b813-8d18d534f0e0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEqAMuBtAiFNoq1UJl66KrrYF/DkfMx2KAzx33eTOCGCrqNSX9B4u1/2OSf34OcDk4KNWA+FHwyDPu8G3W7H9zuDXrDsd5dBR3QBMWBtFkOE1KmRJ1pQvAWV5YnDYawRLIow8HimNcb2eKS6kCZVsF+4NsrwjVSC6mz0/NJmKWg60aJmo8NZ6VpICpaoqPWpwnSO0e7TPBYJzyLCFcoqOXOTE1dpfZtQhYZyOIHfZrizGAskICtQBtssgliATfSejazOKEGkxWOs9nXHRsa2JBrBzsjfdHPPz/tWSMy4E6EOQydQmV5NwMKcTuY207VeieRoSk0EriBTdtzMlQ2PqZVJXI5YWKpqOlFZFD+UirD6gMb3yAyBwDTnmSMvaa3mm+T1qQI5lXEhiaOoEg6qjsBaLZeZzeEcGCosNI4gTWW8DlOdbGUxTFAib60o8FYqeaU7jVzHHvAct0eqgjel/KRIL0DLnMQ9HUPDxzYzezNWYMyJCmkY/spyJCUxRyEsVCgkCItNyIe5lqn9Sldt0QE/tt3SL+/e2zA+PC1U48zT4u/CYNgZfhkEId2NOg39UCFskRSIYV2KQdgtRpdumOWNrfu6sTWvGj9mkisoVCb5XqzG25ScTy5ys+Zs66EsOJfcfZpLBrfkEkfj5m3yL3P4nXf/fhubVPjBNIxhLNjM/Mh8v0vr+hM5PQ6XFvhL18f2/wqU1f5PJSph3oBdLT9GBM9iWNI4M4ArthauWD8Vn+aCoO8Xvxvywn/zYrz8AXh/34EoCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=52105e442fd417109a9a01807fa4e3e2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:51:21</sys_created_on>
+        <sys_id>8c2c4e0c2f9417109a9a01807fa4e351</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 07:44:07</sys_updated_on>
+        <ui_id>e6f12ec9-a70a-4020-9ccb-26b16725f1db</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y207jOhT9lcrPpcdpmjTlDVEhzdFcJGB4oShy7R3qI+cyuTD0VP332Ymdy7TQaWeKBCNeEN572157eS0cc7siUpBTAiPXdvDHOLCpNbSoB67n8Qll3HNdZ2STPolYCFjJkiSNH5jyU2BZHGECB0WZwV+FzBLFljdthC+kEilE5PT2rk8SluIqOaTkdLWR2heGYnNQWHpmcPQuaxzPAsyXSZnI8lRG92b80SxzVQfjVJSwhn0CjzlEAhBPwFQGfRKySLA8TpdNBJcWXyLVBhYyynXDIXvM5P+4n+XSsjAAbJEbNpqhb5jS4WDKcoZICp4XaUNcLDlkmhwBAStUft6N6YIvSS6xyWpKzuaqnh2rIow+a0ZIs0DnYIoMQUBSdlpCN30EV4v4+2WN8kJGFSkmqWLOVDNiOVI3L/ISz4oU8nqDZR3Z4hkUhLijH+I5YcQvD0tWuyDocHCvcDAIVPwd0WXyPhowXnY4wBNggwuMT6vwDUtl2e4nXAYnl9t9jeS3Aj6UOnKHc3dCPXEiAjo/GXm2c8I40BNwLQcc4XLHssm6T7Jldq5YlrVE4Qn534qyTU2bIcjXHJdTeCqT/AxBPYDhYt03LqJWMITJZEjnFqU2pZ7DqWfD3B67Y5sJ7wmRBhKU6JioTmybqZM5zFR7oNoy1YWB9RxcY6lq6FdFP9uqmt/7rBNHt5ZH6VvyFm7+J9Z6Gcccrn5NwS8swHeKDToXyX9xkUY7HOAvZFYp41kndCoOc8QeIGtH/KtRbhpiE/zv+MF+98Pf74ext0tqnLaSSoGjMDpGWK3O8fBzEL414EWKNOXr9RE+svaAVKv/ssa0idHoXcS8qM5Cig3BT02m92HaKp7uVrzWxT6Ct4fvcn+VcufOLm0Fk1ZKokCSUN1dwc+Ixj4jpzMSxRHMSH9Gyiq/1FYVxgpE2CSq2Gq1XutIkTKzgNUZtrMFW2ZVZcYXIAqloz9F/Er8Jn4Mv+3BSe23aQG9qSZlm6b6GVPj1LzIrbvmyhRUK/1zLbt3jnO0O2f0lm6cP33dvNyjxW8+69Fh+IfiBV4lo536g47Ymg8rHkdClh1kHXvqxwFkZ9Hy6+0Tl9MAwkTFS4ABKordQ7pe323b5zdXOcxye7TcXHHolOxXFBjrtf9aMJO6tmv/IWGSxnKjY116b+wr73V67vj2mvOdn1O81ZZmszXUo29NhpOxZ/m4GaSJT30F7AF8rfyqewSbQ7hto49lYe9TU9i7qgsPc8oe6GunXBv4G90Yb1TDp54+1bSNp4914DWkTfKkJ94d8WoccfcDbjvCtU4WAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8c2c4e0c2f9417109a9a01807fa4e351"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e77faa31-06aa-4355-8e21-5ff168cd189b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:04:18</sys_created_on>
+        <sys_id>a91f0ec02fd417109a9a01807fa4e3f3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 07:44:08</sys_updated_on>
+        <ui_id>803fa8c7-2fc4-46b1-8174-1d86fd042d24</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9KzLPISRqXfWtKMKCbaEuvnRLuGZudGDysTMTqyv+971JJjFot2uhL7J5u18z55zck7wcmOBszPrIPX/kD8Ke3+t1Pa877PurQW/ld3kPEH3msARipE6FYao4xVuQeZE4HCYKwSAPfDfMlcLEHI9U50JnEvZL20aZcCMkpzobv7w6LANFJxpUbHw4K10LScIKJbU+15jOMZp9VsQ8DfOYcAWiTs7t5NRWOt+nVKGhAo7vOQx3BhOOBCQCqdFhMSQcTKr2bGxUTgkizZ8SuW86NiIxFdEYdlr8ppv7XtEXITELrQhNGFiBqnQ0BQMLOjk0uWr0SkWIutKEYwS5NJN2rmp4yoxIk2rEwErW06nM4+SxUoQ1B7TeR64JBGYFzwJ5RStabNK35xrkTCSlJJaiTEOQTQTGKLHKTQHnwFBiqXEMWSaSdZCpdCvKYYISu2tJgRvJ9I3u1GKduBAWuF1SFdwZ5adleglKFCQe6BgaPjpM7/VEgtYnKqRh8CsvkFTELIWgVKGUICg3oRgOlcjMPV21RQv86NilX919tGHh6LRQrTNPi78L/FF39G3oB3Q3qizwAomwRVIggXUlBmE3GF+6YV40dh6axs6ibvycSa6gUJvkR7ka71OyPrnIzduznceqYF1y92UuGd6SSyyNm7fJv8zhdT/8/LY2qfSDbhlDGzC5/pl7Xo8TPCKI/NICf+n63P5fgbLe/5lAyfU7sOvlx5jgGQwqGmcGsMXO0habX8WXucAfeOVzQ174b/4Yr38ASFFvIygJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a91f0ec02fd417109a9a01807fa4e3f3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=12f882842f9417109a9a01807fa4e3c7^sys_idNOT IN579e8a802fd417109a9a01807fa4e37a,95401acc2f9417109a9a01807fa4e371,e89f4e042fd417109a9a01807fa4e319,f68f0e042fd417109a9a01807fa4e309"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cc801e842fd417109a9a01807fa4e36d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:02:14</sys_created_on>
+        <sys_id>579e8a802fd417109a9a01807fa4e37a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:29</sys_updated_on>
+        <ui_id>e77faa31-06aa-4355-8e21-5ff168cd189b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4POiSHbsbvkFmwoMGBbgbXoZSsMWpITYbLkSXLSLMh/H+WPtGgTLBh63M16FMn3qEd4T0zrm9a7O7N0Tq40WXx/mBCpA4bfeyI5WZCKQhXPWczSJE8TSpP3s7jM0zJOeAoCUjIhGmqBN5nRXHppdNEBE7IB1YbAsmms2QiOEJeuUbC7fx1ha6m4FQOLBizW8MKSxf5FyO8aUSgohcICt95KvcL0S7mOiR9Gsu8+d8h5FaEf4m7sZCwPtGI6IeLRC82R/qIC5cSE1KA5eGN3R8QK4DdaPQFrqT2WI+Hyo5O/sXaSZeFiJVAjE33weCyGkfUwWxvJxE0TCPaIh1INOcyottZfex1h2KKCVvlx2Ii0DuuJJpAOLAZK1e3abL+NDa+l7gQOQWUYqOMJPI6hbL1w4WGEEjUWKmpoGhxOER5TdsnIpY5WCg9RpcwWmwaHRcAC8QhnBNE14h87+B6sDCq+YBlM7mmW4CQrOjdiOW9RwqEbS/GrDYR6gYOUop8GXnDMysYvsc9GDKwPk8HKc8iqLKbZaXvM8hMmeObi/V7kVZwINp/CFYXpjCZ0OmesnCZ5GedXSVbFvIygszSownnw4nD40VKacji7Am9V9i3254IBvdqf00M7szTJX5YmPPOFO0Mp/b80z5dGuqI3/6Cta/7PO/MQjN93cL1vuGDSIZG7gH0a/xIhsEMDSPYc2hr7M0h4wg5/AMaa+wJvBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1c801e842fd417109a9a01807fa4e378</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>2e504e83-ccaf-4a50-abec-8335161904d5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:09:28</sys_created_on>
+        <sys_id>95401acc2f9417109a9a01807fa4e371</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:29</sys_updated_on>
+        <ui_id>28152080-373c-44f4-8a30-23afda0e7850</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d8801e842fd417109a9a01807fa4e375</block>
+        <comment/>
+        <connected_to>e77faa31-06aa-4355-8e21-5ff168cd189b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:06:24</sys_created_on>
+        <sys_id>e89f4e042fd417109a9a01807fa4e319</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:29</sys_updated_on>
+        <ui_id>2e504e83-ccaf-4a50-abec-8335161904d5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V32/TMBD+V5Cf08hJ1472bQJNQoJNbNNeYEQX59IaHDvYTrtS9X/nnB9dBZ2oQEI88BZ/57v7vvN9ypaZxteNd3fmwjm50Gz+4SFiUgeMvrdMFmzOSg5lMhOJGKfTccp5+vIsyafjPEmLMSCkLGIaKqSbwuhCeml01gIRW4FqQuAGP6PwWBBUSFcr2Nz/HBFLqQqLPYsaLNXwaNl8+0PIb2rMFOSoqMCtt1IvKP1UrkPiq4Hsi7ct8ryK0I9wN3Qytgi0Eh4xfPSoC6I/L0E5jFgFugBv7GaPWITiWqsnYCm1p3IsXH508hvVTieTcLFE0iiwC+6PWT+yDhZLIwVe14Fgh3jIVZ8jjGoqfdXpCMPGEhrlh2ET0jiqh3UgHVj0lMrbpVnfDA0vpW4F9kFlBKj9CTyNIW88uvAwqLCiQlkFdU3DyWprVrJNJi5VvFB0iEtl1tQ0bFgMIhCPaUYQXxL+uoXvwcqg4h2VoeSOZg5OiqzdRirnLUnYtWPJvjaBUCewl5J106ALTlhZ+wvqs8Ke9S46bZWTI0twsMXbLU7LJEUxG8E5h9EZT/loJkQ+Sqd5Mj1PJ2VS5DFpoCmAypwHj7vdx4bzMW1vt+ifrt7/UR0B9EJKHfPSP8fvLzg6Oebo48/4jI3TX9g4LN6JLuac/7fxoY2lyzo79tra5r/t4odgxa6D6/amQCEdEbkL2JvhvxUCG1oAKQ6htbFfgoQnbPcdXY1WCwEHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">94801e842fd417109a9a01807fa4e372</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>e77faa31-06aa-4355-8e21-5ff168cd189b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:06:18</sys_created_on>
+        <sys_id>f68f0e042fd417109a9a01807fa4e309</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:29</sys_updated_on>
+        <ui_id>94431cc8-a578-401c-9ac3-d970fc29344f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_12f882842f9417109a9a01807fa4e3c7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:50:30</sys_created_on>
+        <sys_id>5feb4e0c2f9417109a9a01807fa4e31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 05:50:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_12f882842f9417109a9a01807fa4e3c7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 05:50:30</sys_created_on>
+        <sys_id>5feb4e0c2f9417109a9a01807fa4e343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 05:50:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_12f882842f9417109a9a01807fa4e3c7"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>leave_approval_process</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Management System Record","reference":"x_1929781_enterp_0_leave_management_system","reference_display":"Leave Management System","type":"reference","base_type":"reference","usedInstances":{"e6f12ec9-a70a-4020-9ccb-26b16725f1db":["record"],"803fa8c7-2fc4-46b1-8174-1d86fd042d24":["record"],"676460da-c353-445c-b813-8d18d534f0e0":["record"]},"attributes":{}},{"name":"Created_1.current.employee.manager","label":"Trigger - Record Created➛Leave Management System Record➛Employee➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"e6f12ec9-a70a-4020-9ccb-26b16725f1db":["approval_conditions"]}},{"name":"e6f12ec9-a70a-4020-9ccb-26b16725f1db.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"e77faa31-06aa-4355-8e21-5ff168cd189b":["condition"],"2e504e83-ccaf-4a50-abec-8335161904d5":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Leave Approval Process</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Leave Approval Process">12f882842f9417109a9a01807fa4e3c7</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>90801e842fd417109a9a01807fa4e3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=90801e842fd417109a9a01807fa4e3cd^sys_idNOT IN14801e842fd417109a9a01807fa4e3cf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>90801e842fd417109a9a01807fa4e3cd</id>
+        <name>Leave Approval Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>14801e842fd417109a9a01807fa4e3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=14801e842fd417109a9a01807fa4e3cf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=90801e842fd417109a9a01807fa4e3cd^sys_idNOT IN9c801e842fd417109a9a01807fa4e3d0,a4801e842fd417109a9a01807fa4e3f0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</model>
+        <model_id>90801e842fd417109a9a01807fa4e3cd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_90801e842fd417109a9a01807fa4e3cd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>9c801e842fd417109a9a01807fa4e3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c801e842fd417109a9a01807fa4e3d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</model>
+        <model_id>90801e842fd417109a9a01807fa4e3cd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_90801e842fd417109a9a01807fa4e3cd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>a4801e842fd417109a9a01807fa4e3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a4801e842fd417109a9a01807fa4e3f0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=90801e842fd417109a9a01807fa4e3cd^sys_idNOT IN28805e842fd417109a9a01807fa4e329"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:31</sys_created_on>
+        <sys_id>28805e842fd417109a9a01807fa4e329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:31</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixlbetk0UDZBPU9rYPQSpQ0tAWSlOuRClxF/n3DnWxZUl2fJFT5ykwSXHOHJ45Q+bph8qIA0y9VifEYaB2VJ8LCDlhk+UCcFjIYZuTuZybE+4REYRL9VqEMXRUGgbzCcwXjAhcTAmLcDAIPQjVa72jJoTFMF5Gdx7uhN+n2+R7qvk0/n61dcuw+gPdBhl8YWs2A5KAjfHIFOY4akfLSMAcP/L8CMMt/8i/vZcLlW+rhcq4WOjOfOaFwNXrp+eOuiAhBhcS2I/KlMBM7Q0alIcsX1/idqlLLAM019RNw9A0Y9DVnSvT0Q3PJKBpuK7KYSVP0UDlmiR4FcA98Fb81VgOgXiPnC1XK2Z4SBmjc/Ia+f/i7gNNrqOAWbmQza1+2jln2bA7C3wXHhfCD3g2kuHMJgMWz/lDhl+yDZTETBRs40gc4X6wkJAliBwRHc+Cl1ER8KvP0+zySRa4hK1+ESFC34kFRPIoqM/wUOyMmyiIwxT96Hb4OLqx//wyGf52O7JHt+PJ6G44ub1R39K87H9iuWOGMMdiZ+m8rSTy1QcmD5DHcwfRdNTIDf2F+OIKPynU+tZZV8Aw4J6fslKrAreYijaroMh+Vxlo2tZCcEsRi2L46/b3usqzweMUPSxjTxV9dUWIB2SLoh1aUnSZkwbQooGect67tJ2P7CPurqb9T/LObe5Ydb8QLiJbBDbxPLvEEpoBbixTDDxgN+t4OO5Pp1gQPl/EInpX7llub+9qO4w5fmCvzqOu8JS2FX/3foRonrA+C25ywPQ+33EUcyXgihuHobRdPFel2F1JUUkt0Ls5+nKGnI6BgStKYqDfo/Kvb34U+XxaQr8Kno7Uo7NlGUJht6cEfW6zvOukJ5V8KmV+fI0Xp5fWt65T6gA1tL6sbl0zHaprfa1HqGdqmmuU6rsOcSt2URHKWer8sCqPUomyPTRRJT4Hr5VrZC9FJ5vlUJAghZObybAdaHpL0AwJrWKK5kGuuBJrNnyzqdldqbV8VyBeQvALr8hxn7vAHr5IWfCCfnuEJ9IghGkYxNyrepPcU/Hx78aKltzQIe7fu8OuVyg/5cf286U545r2QriEL8/miSbVHQu6oKEVmuiCTs+yHJcYlPav+mDoFU9cg2tE/Cm88B0xJE1q2uaLjXpOmsrgAEc8AWDNHQ8GeLov5nJtdMVs7nP438sMuI1QQ5tJh6vZ4JT5HhRz7XpALXSyrvq2fOA+T0pGpwPL7en9vtvHVw+6AO2CQ/Su0SNW/8oc9CouUIO3C7poYOtD3kLRMkqBbHGI79nUZT37zynlCISQjevwfp6uJ1mAUmeVR6KkJhOEiqRTuVsvVMaAfTJ9DbfW3wMxq3V2DP0rjm+ElvfAh4D/0gCnzdcXx4fAPtRsgXJpF4+KSJJN1s/0JIPuoGdRs9l4qNVkPGuI28Ff/EVkT4EkW6XWdCPZtyCTxrreeoU4osQq4infLXZcftoiRW+dFON8pJgnX7iKCt36Dj0G7CdqbOlt4/juFnCwA9ro3j5V8n88gqc4S0XMAMlkeKfGUIqM22Y/yS7HtfaGw0p+j2mvc0maq2nfBApOKOGHJH6e9lWRwke8oMHrk17P3HJ3tqov6CaY72Rx8c3sYOEkTTrc2dEO27e6Z2NPK9XVpk727FatZt3csk7LurFpvZf16e1o1/u/AcWFNprn/wDpdG7HBCAAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=90801e842fd417109a9a01807fa4e3cd^sys_idNOT IN2c805e842fd417109a9a01807fa4e326,ac805e842fd417109a9a01807fa4e323,e8805e842fd417109a9a01807fa4e325"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>2e504e83-ccaf-4a50-abec-8335161904d5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>2c805e842fd417109a9a01807fa4e326</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>676460da-c353-445c-b813-8d18d534f0e0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEqAMuBtAiFNoq1UJl66KrrYF/DkfMx2KAzx33eTOCGCrqNSX9B4u1/2OSf34OcDk4KNWA+FHwyDPu8G3W7H9zuDXrDsd5dBR3QBMWBtFkOE1KmRJ1pQvAWV5YnDYawRLIow8HimNcb2eKS6kCZVsF+4NsrwjVSC6mz0/NJmKWg60aJmo8NZ6VpICpaoqPWpwnSO0e7TPBYJzyLCFcoqOXOTE1dpfZtQhYZyOIHfZrizGAskICtQBtssgliATfSejazOKEGkxWOs9nXHRsa2JBrBzsjfdHPPz/tWSMy4E6EOQydQmV5NwMKcTuY207VeieRoSk0EriBTdtzMlQ2PqZVJXI5YWKpqOlFZFD+UirD6gMb3yAyBwDTnmSMvaa3mm+T1qQI5lXEhiaOoEg6qjsBaLZeZzeEcGCosNI4gTWW8DlOdbGUxTFAib60o8FYqeaU7jVzHHvAct0eqgjel/KRIL0DLnMQ9HUPDxzYzezNWYMyJCmkY/spyJCUxRyEsVCgkCItNyIe5lqn9Sldt0QE/tt3SL+/e2zA+PC1U48zT4u/CYNgZfhkEId2NOg39UCFskRSIYV2KQdgtRpdumOWNrfu6sTWvGj9mkisoVCb5XqzG25ScTy5ys+Zs66EsOJfcfZpLBrfkEkfj5m3yL3P4nXf/fhubVPjBNIxhLNjM/Mh8v0vr+hM5PQ6XFvhL18f2/wqU1f5PJSph3oBdLT9GBM9iWNI4M4ArthauWD8Vn+aCoO8Xvxvywn/zYrz8AXh/34EoCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2c805e842fd417109a9a01807fa4e326"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>ac805e842fd417109a9a01807fa4e323</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>e6f12ec9-a70a-4020-9ccb-26b16725f1db</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y207jOhT9lcrPpcdpmjTlDVEhzdFcJGB4oShy7R3qI+cyuTD0VP332Ymdy7TQaWeKBCNeEN572157eS0cc7siUpBTAiPXdvDHOLCpNbSoB67n8Qll3HNdZ2STPolYCFjJkiSNH5jyU2BZHGECB0WZwV+FzBLFljdthC+kEilE5PT2rk8SluIqOaTkdLWR2heGYnNQWHpmcPQuaxzPAsyXSZnI8lRG92b80SxzVQfjVJSwhn0CjzlEAhBPwFQGfRKySLA8TpdNBJcWXyLVBhYyynXDIXvM5P+4n+XSsjAAbJEbNpqhb5jS4WDKcoZICp4XaUNcLDlkmhwBAStUft6N6YIvSS6xyWpKzuaqnh2rIow+a0ZIs0DnYIoMQUBSdlpCN30EV4v4+2WN8kJGFSkmqWLOVDNiOVI3L/ISz4oU8nqDZR3Z4hkUhLijH+I5YcQvD0tWuyDocHCvcDAIVPwd0WXyPhowXnY4wBNggwuMT6vwDUtl2e4nXAYnl9t9jeS3Aj6UOnKHc3dCPXEiAjo/GXm2c8I40BNwLQcc4XLHssm6T7Jldq5YlrVE4Qn534qyTU2bIcjXHJdTeCqT/AxBPYDhYt03LqJWMITJZEjnFqU2pZ7DqWfD3B67Y5sJ7wmRBhKU6JioTmybqZM5zFR7oNoy1YWB9RxcY6lq6FdFP9uqmt/7rBNHt5ZH6VvyFm7+J9Z6Gcccrn5NwS8swHeKDToXyX9xkUY7HOAvZFYp41kndCoOc8QeIGtH/KtRbhpiE/zv+MF+98Pf74ext0tqnLaSSoGjMDpGWK3O8fBzEL414EWKNOXr9RE+svaAVKv/ssa0idHoXcS8qM5Cig3BT02m92HaKp7uVrzWxT6Ct4fvcn+VcufOLm0Fk1ZKokCSUN1dwc+Ixj4jpzMSxRHMSH9Gyiq/1FYVxgpE2CSq2Gq1XutIkTKzgNUZtrMFW2ZVZcYXIAqloz9F/Er8Jn4Mv+3BSe23aQG9qSZlm6b6GVPj1LzIrbvmyhRUK/1zLbt3jnO0O2f0lm6cP33dvNyjxW8+69Fh+IfiBV4lo536g47Ymg8rHkdClh1kHXvqxwFkZ9Hy6+0Tl9MAwkTFS4ABKordQ7pe323b5zdXOcxye7TcXHHolOxXFBjrtf9aMJO6tmv/IWGSxnKjY116b+wr73V67vj2mvOdn1O81ZZmszXUo29NhpOxZ/m4GaSJT30F7AF8rfyqewSbQ7hto49lYe9TU9i7qgsPc8oe6GunXBv4G90Yb1TDp54+1bSNp4914DWkTfKkJ94d8WoccfcDbjvCtU4WAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac805e842fd417109a9a01807fa4e323"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e77faa31-06aa-4355-8e21-5ff168cd189b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>e8805e842fd417109a9a01807fa4e325</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>803fa8c7-2fc4-46b1-8174-1d86fd042d24</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9KzLPISRqXfWtKMKCbaEuvnRLuGZudGDysTMTqyv+971JJjFot2uhL7J5u18z55zck7wcmOBszPrIPX/kD8Ke3+t1Pa877PurQW/ld3kPEH3msARipE6FYao4xVuQeZE4HCYKwSAPfDfMlcLEHI9U50JnEvZL20aZcCMkpzobv7w6LANFJxpUbHw4K10LScIKJbU+15jOMZp9VsQ8DfOYcAWiTs7t5NRWOt+nVKGhAo7vOQx3BhOOBCQCqdFhMSQcTKr2bGxUTgkizZ8SuW86NiIxFdEYdlr8ppv7XtEXITELrQhNGFiBqnQ0BQMLOjk0uWr0SkWIutKEYwS5NJN2rmp4yoxIk2rEwErW06nM4+SxUoQ1B7TeR64JBGYFzwJ5RStabNK35xrkTCSlJJaiTEOQTQTGKLHKTQHnwFBiqXEMWSaSdZCpdCvKYYISu2tJgRvJ9I3u1GKduBAWuF1SFdwZ5adleglKFCQe6BgaPjpM7/VEgtYnKqRh8CsvkFTELIWgVKGUICg3oRgOlcjMPV21RQv86NilX919tGHh6LRQrTNPi78L/FF39G3oB3Q3qizwAomwRVIggXUlBmE3GF+6YV40dh6axs6ibvycSa6gUJvkR7ka71OyPrnIzduznceqYF1y92UuGd6SSyyNm7fJv8zhdT/8/LY2qfSDbhlDGzC5/pl7Xo8TPCKI/NICf+n63P5fgbLe/5lAyfU7sOvlx5jgGQwqGmcGsMXO0habX8WXucAfeOVzQ174b/4Yr38ASFFvIygJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8805e842fd417109a9a01807fa4e325"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=90801e842fd417109a9a01807fa4e3cd^sys_idNOT IN24805e842fd417109a9a01807fa4e31e,60805e842fd417109a9a01807fa4e322,6c805e842fd417109a9a01807fa4e31f,a4805e842fd417109a9a01807fa4e30f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">94801e842fd417109a9a01807fa4e372</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>e77faa31-06aa-4355-8e21-5ff168cd189b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>24805e842fd417109a9a01807fa4e31e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>94431cc8-a578-401c-9ac3-d970fc29344f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1c801e842fd417109a9a01807fa4e378</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>2e504e83-ccaf-4a50-abec-8335161904d5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>60805e842fd417109a9a01807fa4e322</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>28152080-373c-44f4-8a30-23afda0e7850</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d8801e842fd417109a9a01807fa4e375</block>
+        <comment/>
+        <connected_to>e77faa31-06aa-4355-8e21-5ff168cd189b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>6c805e842fd417109a9a01807fa4e31f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>2e504e83-ccaf-4a50-abec-8335161904d5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VUW/TMBD+K8jPaeSka0f7NnWahDQ2sU17gRFdbKc1uHaInXYl6n/nHCdtBUUUbQ888BZ/dz5/32ffpSGmdmXt7IO5sFbONZl+fIqI1B7D74ZITqakoFAkE5awYToeppSmb8+SfDzMk5QPQUBKIqJhKTCTGc2lk0ZnLRCRFajaB+7EF8Gc4AhxaUsFm8dfI2whFa9Ex6KECms4UZFp81PoVFYKcqEwddbTenPdIr/n6zalx62rpJ536+uuyn0Pmop7VgmNiHh2QnNkPy1AWRGRJWgOzlSbHVIJ4Lda7YGF1A7LEZ/8bOV3PDAdjXxiIVAiEyG4W2adYwEuLsEBUqmZq6sulS2MZMIGc7gooFZudoiFhNvSSw1bHOSq321UvdQ3wRGyK9BfECK1RRKi9Eo99U5Hcb8w67ue5ZXUrStdUBkGarcCh97ltfN8GiKUWGKhbAlliY5mZWVWst2MXJbxXOEiLpRZ46H+VcbAPPEYjYX4CvHLFn6ESnoV77EMbg40c7CSZe0LxnJokyDbiNiNnSmwdi8S3c2+1Z5ikNyJy4I/fgurZOku8OSV6HRso9MaIjnywA56oWnEuEhSwSYDOKcwOKMpHUwYywfpOE/G5+moSHgeoyr0BVRmHTix3X6qKR1iD4R2+Xzz4UV1GOCdKXWsI/85fq86F5Jjc+H4hf3NMEj/MAz8SzxxFlBK/w+DFw8DabPQwp229vBXnAVPvqHDmTuvmbRI7cFj7/p/qA9s8HFJdgitTfXVi9pj2x8TvPOojQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cc801e842fd417109a9a01807fa4e36d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">90801e842fd417109a9a01807fa4e3cd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>a4805e842fd417109a9a01807fa4e30f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <ui_id>e77faa31-06aa-4355-8e21-5ff168cd189b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWaAkS6l9MxwEKJA2QBPk0gbCiqRsopSoipQdV/C/d6mHbTQO6qA59mbOLpczox24JbqxVWPNg14YI1clmX978ogsHYa/WyI5mZOcQh7MWMCiMIlCSsOP0yBLoiwIeQQCIuKREgqBnUyXXFqpy7QDPLIB1bjCoqpqvREcIS5NpWD3+LLC1lLxWgwsKqhxhhU1mbd/lC5lpSATCluXI60Ptx3yOl+7qxxubC3L1XC+Habcj6CuuWMVUI+IZytKjuznOSgjPFJAycHqendAagH8rlRHYC1Li+OIa3428hc+GMaxa8wFSmSiLx6O6eBYD+fXYAGpNMw29dDK1loyYXpzuMihUXZ5ivUNd5WT2l+xkKnxtlZNUX7pHSGHAeMHQqQxSEJUTqmjPujI79d6+3VkeSPLzpWhqDQDdTiBRe+yxjo+LRFKFDgoLaCq0NHULYDsLiOXwl8pPPi50lt81G2lD8wR99FY8G8Qv+7gR6ilU/EZx+DlnmYGRrK022AchzYJsveI2ZmlAmOOItHd9GfjKPaSB3Fp74+7wmpZ2QW+vBGDjr03BGIGcR4HND6/etPkzIKdZKFtRZIHoWCzCVxRmExpSCczxrJJmGRBchXGecAzH7pggEqNBSv2++8NpRGHV4P0XmPflsILrHiRwvP2vCV64V+i5777hcmjlP6P3j9HT5q0D8ygrXv8HZP35OLTv3nwmkmD1B4c9mn8x3KFHS6XZKfQVtc/nKgjtv8N+khwe/sGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_90801e842fd417109a9a01807fa4e3cd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>a4801e842fd417109a9a01807fa4e3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_90801e842fd417109a9a01807fa4e3cd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:30</sys_created_on>
+        <sys_id>e4801e842fd417109a9a01807fa4e3ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_90801e842fd417109a9a01807fa4e3cd"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>12f882842f9417109a9a01807fa4e3c7</sys_id>
+        <latest_snapshot>90801e842fd417109a9a01807fa4e3cd</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch10-05-22-2026_06-12-2026_2311.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=12f882842f9417109a9a01807fa4e3c7^sys_idNOT IN38805e842fd417109a9a01807fa4e3ba"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"38805e842fd417109a9a01807fa4e3ba","name":"plan","plan_signature":null}}</plan>
+        <plan_id>12f882842f9417109a9a01807fa4e3c7</plan_id>
+        <snapshot>fbe52ac02f9817109a9a01807fa4e3f8</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-28 06:10:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>38805e842fd417109a9a01807fa4e3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-28 06:10:31</sys_updated_on>
+        <trigger display_value="">78805e842fd417109a9a01807fa4e3b7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=12f882842f9417109a9a01807fa4e3c7"/>
+</record_update>

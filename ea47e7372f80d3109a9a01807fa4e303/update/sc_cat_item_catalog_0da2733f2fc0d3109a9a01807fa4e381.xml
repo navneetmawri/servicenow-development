@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Apply Leave">0aaf2f772fc0d3109a9a01807fa4e345</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-27 18:40:47</sys_created_on>
+        <sys_id>0da2733f2fc0d3109a9a01807fa4e381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Apply Leave</sys_name>
+        <sys_package display_value="Enterprise IT Operations Hub" source="x_1929781_enterp_0">ea47e7372f80d3109a9a01807fa4e303</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_0da2733f2fc0d3109a9a01807fa4e381</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-27 18:40:47</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>
