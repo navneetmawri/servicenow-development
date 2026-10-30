@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>100</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Purpose of using Office Cab">8db360302f985b109a9a01807fa4e3ac</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>bud.richman</sys_created_by>
+        <sys_created_on>2026-10-30 06:15:28</sys_created_on>
+        <sys_id>68d464b02f985b109a9a01807fa4e320</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Office Commute</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise IT Operations Hub">ea47e7372f80d3109a9a01807fa4e303</sys_scope>
+        <sys_update_name>question_choice_68d464b02f985b109a9a01807fa4e320</sys_update_name>
+        <sys_updated_by>bud.richman</sys_updated_by>
+        <sys_updated_on>2026-10-30 06:40:28</sys_updated_on>
+        <text>Office Commute</text>
+        <value>office_commute</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=68d464b02f985b109a9a01807fa4e320"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>100</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>68d464b02f985b109a9a01807fa4e320</id>
+        <parent/>
+        <reference_amount>100</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>bud.richman</sys_created_by>
+        <sys_created_on>2026-10-30 06:40:28</sys_created_on>
+        <sys_id>8b8a24bc2f985b109a9a01807fa4e329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bud.richman</sys_updated_by>
+        <sys_updated_on>2026-10-30 06:40:28</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
